@@ -1,6 +1,6 @@
 export function initialize(application) {
-  application.inject('controller', 'pusher', 'service:pusher');
-  application.inject('route', 'pusher', 'service:pusher');
+  application.injection('controller', 'pusher', 'service:pusher');
+  application.injection('route', 'pusher', 'service:pusher');
 }
 
 export default {
